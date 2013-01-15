@@ -1,0 +1,130 @@
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: stretch;
+}
+
+.left-menu{
+    background: @white;
+    -webkit-box-flex: 2;
+    width: 100%;
+    border-left: 5px solid @orange;
+}
+
+.content {
+    -webkit-box-flex: 1;
+    width: 100%;
+    background: @darkGrey;
+    padding: 4.5em;
+    p {
+        font: 300 18px/28px @textFont;
+        color: @white;
+    }
+    h1, h2, h3, h4, h5{
+        color: @orange;
+    }
+    h1 {
+        font: 400 40px/40px @titleFont;
+    }
+    * {
+        -webkit-animation-delay: 2.3s;
+    }
+}
+
+.menu-wrapper {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+}
+
+.menu-wrapper {
+    text-align: center;
+    div {
+        -webkit-box-flex: 1;
+        height: 100%;
+
+        &:nth-child(4n + 1) {
+            -webkit-animation-delay: 2.3s;
+        }
+
+        &:nth-child(4n + 2) {
+            -webkit-animation-delay: 1s;
+        }
+
+        &:nth-child(4n + 3) {
+            -webkit-animation-delay: 1.3s;
+        }
+
+        &:nth-child(4n + 4) {
+            -webkit-animation-delay: 1.6s;
+        }
+
+        &:nth-child(4n + 5) {
+            -webkit-animation-delay: 1.9s;
+        }
+    }
+
+    p {
+        font: 300 40px/90px "Lato";
+        cursor: pointer;
+        .transition(all 300ms ease);
+        border-left: 0px solid @orange;
+
+        &:first-letter {
+            font-weight: 400;
+            color: @orange;
+        }
+        &:hover:first-letter {
+            font-weight: 900;
+        }
+
+        &:hover {
+            border-left-width: 10px;
+        }
+    }
+
+
+}
+
+.hint {
+    font: 400 18px/40px @textFont;
+    color: rgba(239, 71, 35, 0.84);
+    padding-left: 1em;
+    display: block;
+}
+
+.portrait {
+    background: @orange;
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        float: left;
+        margin: 20px 0 20px 30px;
+    }
+
+    p {
+        color: @darkGrey;
+        font-size: 30px;
+        line-height: 68px;
+        &:first-letter {
+            color: @darkGrey;
+            font-weight: 300;
+        }
+        &.baseline {
+            font-size: 18px;
+            line-height: 0px;
+            font-weight: 300;
+        }
+        .select{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
