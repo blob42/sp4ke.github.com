@@ -12,22 +12,30 @@ body, html {
 
 .left-menu{
     background: @white;
-    -webkit-box-flex: 2;
+    -webkit-box-flex: 2.2;
     width: 100%;
     border-left: 5px solid @orange;
+    opacity: 0.5;
+    .transition(opacity 300ms ease);
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .content {
     -webkit-box-flex: 1;
     width: 100%;
-    background: @darkGrey;
+    /*background: @darkGrey;*/
+    /*background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/stressed_linen.png);*/
     padding: 4.5em;
     p {
         font: 300 18px/28px @textFont;
-        color: @white;
+        color: @darkGrey;
     }
     h1, h2, h3, h4, h5{
         color: @orange;
+        text-shadow: 0px 1px 1px rgba(3, 3, 3, 1);
     }
     h1 {
         font: 400 40px/40px @titleFont;
@@ -45,9 +53,11 @@ body, html {
 
 .menu-wrapper {
     text-align: center;
+
     div {
         -webkit-box-flex: 1;
         height: 100%;
+
 
         &:nth-child(4n + 1) {
             -webkit-animation-delay: 2.3s;
@@ -75,17 +85,18 @@ body, html {
         cursor: pointer;
         .transition(all 300ms ease);
         border-left: 0px solid @orange;
+        opacity: 0.7;
 
         &:first-letter {
             font-weight: 400;
             color: @orange;
         }
         &:hover:first-letter {
-            font-weight: 900;
+            font-weight: 700;
         }
 
         &:hover {
-            border-left-width: 10px;
+            opacity: 1;
         }
     }
 
@@ -100,13 +111,13 @@ body, html {
 }
 
 .portrait {
-    background: @orange;
     img {
         width: 70px;
         height: 70px;
         border-radius: 50px;
         float: left;
-        margin: 20px 0 20px 30px;
+        margin: 20px 0 20px 10px;
+        opacity: 0.8;
     }
 
     p {
