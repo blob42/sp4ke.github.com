@@ -6,4 +6,4 @@ build.xml
 .project
 .settings
 .idea/*
-js/*.js
+app/js/*.js
