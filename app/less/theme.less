@@ -1,139 +1,103 @@
-body, html {
-    height: 100%;
-    background-image: url('/img/subtle_grunge.png');
-    background-color: @white;
+body {
+    font: 18px/27px 'junctionregularRegular', Arial, sans-serif;
+    color: @textColor;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: @headingFont;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
 }
 
-.wrapper {
-    height: 100%;
+.main {
+    height: 70%;
     width: 100%;
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-box-align: stretch;
+    position: absolute;
+    text-align: center;
+    padding-top: 3%;
+    padding-left: 0;
+    padding-right: 0;
+
+    .profil {
+        padding-top: 8%;
+
+        h2 {
+            padding-bottom: 3%;
+        }
+    }
+
+    .hero {
+        padding-bottom: 2%;
+    }
+
+    .freelance {
+        .row-fluid {
+            div {
+                padding: 10px;
+            }
+        }
+    }
 }
 
-.left-menu{
-    -webkit-box-flex: 2.2;
+.dock {
+    .animation-delay(2s);
     width: 100%;
-    border-left: 5px solid @orange;
-    opacity: 0.7;
-    .transition(opacity 300ms ease);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background: #fff;
+    .box-shadow(0 -30px 40px #fff);
 
-    &:hover{
-        opacity: 1;
-    }
-}
-
-.content {
-    -webkit-box-flex: 1;
-    width: 100%;
-    /*background: @darkGrey;*/
-    /*background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/stressed_linen.png);*/
-    padding: 4.5em;
-    p, li {
-        font: 300 18px/28px @textFont;
-        color: @darkGrey;
-    }
-    h1, h2, h3, h4, h5{
-        color: @orange;
-        text-shadow: 0px 1px 1px rgba(3, 3, 3, 1);
-    }
-    h1 {
-        font: 400 40px/40px @titleFont;
-    }
-    -webkit-animation-delay: 2.3s;
-}
-
-.menu-wrapper {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-align: stretch;
-}
-
-.menu-wrapper {
-
-    div {
-        padding-left: 2em;
-        -webkit-box-flex: 1;
-        height: 100%;
-
-
-        &:nth-child(4n + 1) {
-            -webkit-animation-delay: 2.3s;
-        }
-
-        &:nth-child(4n + 2) {
-            -webkit-animation-delay: 1s;
-        }
-
-        &:nth-child(4n + 3) {
-            -webkit-animation-delay: 1.3s;
-        }
-
-        &:nth-child(4n + 4) {
-            -webkit-animation-delay: 1.6s;
-        }
-
-        &:nth-child(4n + 5) {
-            -webkit-animation-delay: 1.9s;
-        }
+    .hoverText {
+        top: -5%;
+        display: none;
     }
 
-    p {
-        font: 300 40px/90px "Lato";
-        cursor: pointer;
-        .transition(all 300ms ease);
-        border-left: 0px solid @orange;
-        color:  lighten(@darkGrey, 10%);
+    
+    a {
+        color: @dockIconColor;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.18);
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        .transition(all 100ms ease);
 
-        &:first-letter {
-            /*font-weight: 400;*/
-            color: @orange;
+        &:hover, &.active {
+            text-decoration: none;
+
+            .contact {
+                color: @contactColor;
+
+            }
+
+            .profil {
+                color: @profilColor;
+            }
+
+            .projects {
+                color: @projectsColor;
+            }
+
+            .blog {
+                color: @blogColor;
+            }
         }
-        &:hover {
-            color: @orange;
-            text-shadow: 0px 1px 1px @white;
 
-        }
-    }
+        i {
+            font-size: 5em;
+            .transition(all 200ms ease);
 
-
-}
-
-.hint {
-    font: 400 18px/40px @textFont;
-    color: rgba(239, 71, 35, 0.84);
-    padding-left: 1em;
-    display: block;
-}
-
-.portrait {
-    padding-left: 0 !important;
-
-    img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50px;
-        float: left;
-        margin: 20px 0 20px 10px;
-        opacity: 0.8;
-    }
-
-    p {
-        color: @darkGrey;
-        font-size: 30px;
-        line-height: 68px;
-        &:first-letter {
-            color: @darkGrey;
-            font-weight: 300;
-        }
-        &.baseline {
-            font-size: 18px;
-            line-height: 0px;
-            font-weight: 300;
-        }
-        .select{
-            color: @orange;
+            &.contact {
+                font-size: 4.5em;
+                position: absolute;
+            }
         }
     }
 }

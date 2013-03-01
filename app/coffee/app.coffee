@@ -2,8 +2,11 @@ angular
   .module( 'myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
   .config( ['$routeProvider', ($routeProvider)->
 
-      $routeProvider.when('/who_am_i', {templateUrl: 'partials/who_am_i.html', controller: MyCtrl1})
-      $routeProvider.when('/timeline', {templateUrl: 'partials/timeline.html', controller: MyCtrl2})
-      $routeProvider.otherwise({redirectTo: '/who_am_i'})
+      $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: MyCtrl1})
+      $routeProvider.when('/freelance', {templateUrl: 'partials/freelance.html', controller: MyCtrl1})
+      $routeProvider.when('/projects', {templateUrl: 'partials/projects.html', controller: MyCtrl2})
+      $routeProvider.when('/blog', {templateUrl: 'partials/blog.html', controller: MyCtrl2})
+      $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: MyCtrl2})
+      $routeProvider.otherwise({redirectTo: '/'})
     ])
 
