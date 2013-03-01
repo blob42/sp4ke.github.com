@@ -10,3 +10,6 @@
 [submodule "app/lib/holderjs"]
 	path = app/lib/holderjs
 	url = git@github.com:imsky/holder.git
+[submodule "app/lib/angular-ui"]
+	path = app/lib/angular-ui
+	url = git://github.com/angular-ui/angular-ui.git
