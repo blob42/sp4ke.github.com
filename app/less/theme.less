@@ -7,26 +7,40 @@ body {
     h4,
     h5 {
         font-family: @headingFont;
+        @media (max-width: 767px) { 
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .45);
+        }
     }
 
     h2 {
         font-size: 40px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 40px;
     }
 
 }
 
 .main {
     height: 70%;
-    width: 100%;
-    position: absolute;
     text-align: center;
     padding-top: 3%;
     padding-left: 0;
     padding-right: 0;
 
+
     .profil {
+        .qrcode {
+            display: block;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            opacity: 0;
+            .transition(all 500ms ease);
+        }
+
+        &:hover .qrcode {
+            opacity: 1;
+        }
         padding-top: 8%;
 
         h2 {
@@ -39,16 +53,74 @@ body {
     }
 
     .freelance {
+
+        @media (max-width: 767px) {
+            padding-bottom: 16%;
+        }
         .row-fluid {
             div {
                 padding: 10px;
             }
         }
     }
+
+
+    .contact {
+        padding-top: 10%;
+
+
+        a {
+            text-decoration: none !important;
+            color: @textColor;
+            .transition(all 200ms ease);
+            padding-left: .5em;
+            padding-right: .5em;
+
+            &:hover {
+                color: @contactColor;
+                .transition(all 50ms ease);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+
+            }
+        }
+    }
+
+    .projects {
+        margin-top: 5%;
+
+
+        .details {
+            /*position: fixed;*/
+            /*right: 2%;*/
+            /*top: 20%;*/
+            &.github {
+                padding-top: 5%;
+            }
+        }
+
+        a {
+            text-decoration: none !important;
+            color: @textColor;
+
+            &:hover {
+                color: @projectsColor;
+            }
+        }
+        .title {
+            text-align: right;
+            padding-right: 3em;
+            .transition(all 200ms ease-out);
+            border-right: 5px solid @textColor;
+
+            h2 {
+                padding-bottom: .6em;
+            }
+        }
+    }
 }
 
 .dock {
-    .animation-delay(2s);
+    .animation-delay(1.5s);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -59,6 +131,10 @@ body {
     .hoverText {
         top: -5%;
         display: none;
+
+        &.hovered {
+            display: block;
+        }
     }
 
     
@@ -68,6 +144,7 @@ body {
         padding-left: 1.5em;
         padding-right: 1.5em;
         .transition(all 100ms ease);
+        display: inline-block;
 
         &:hover, &.active {
             text-decoration: none;
@@ -96,7 +173,14 @@ body {
 
             &.contact {
                 font-size: 4.5em;
-                position: absolute;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 2em;
+
+            &.contact {
+                font-size: 1.5em;
+            }
             }
         }
     }

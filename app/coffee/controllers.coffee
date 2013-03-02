@@ -1,4 +1,9 @@
 #Controllers
+#
+@projectsCtrl = ($scope)->
+
+
+projectsCtrl.$inject = ['$scope']
 
 @dockCtrl = ($scope, $location)->
     $scope.icons = [
@@ -22,6 +27,17 @@
             link: '/contact'
             text: 'Get in touch'
     ]
+
+    $scope.hovered = false
+
+    $scope.hoverText = ($index)->
+        $scope.hovered = true
+        $scope.hoveredIndex = $index
+        console.log $scope.hovered
+
+    $scope.hoverOut = ()->
+        $scope.hovered = false
+        $scope.hoveredIndex = null
 
     $scope.selected = null
 
