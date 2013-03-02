@@ -1,0 +1,187 @@
+body {
+    font: 18px/27px 'junctionregularRegular', Arial, sans-serif;
+    color: @textColor;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: @headingFont;
+        @media (max-width: 767px) { 
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .45);
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+}
+
+.main {
+    height: 70%;
+    text-align: center;
+    padding-top: 3%;
+    padding-left: 0;
+    padding-right: 0;
+
+
+    .profil {
+        .qrcode {
+            display: block;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            opacity: 0;
+            .transition(all 500ms ease);
+        }
+
+        &:hover .qrcode {
+            opacity: 1;
+        }
+        padding-top: 8%;
+
+        h2 {
+            padding-bottom: 3%;
+        }
+    }
+
+    .hero {
+        padding-bottom: 2%;
+    }
+
+    .freelance {
+
+        @media (max-width: 767px) {
+            padding-bottom: 16%;
+        }
+        .row-fluid {
+            div {
+                padding: 10px;
+            }
+        }
+    }
+
+
+    .contact {
+        padding-top: 10%;
+
+
+        a {
+            text-decoration: none !important;
+            color: @textColor;
+            .transition(all 200ms ease);
+            padding-left: .5em;
+            padding-right: .5em;
+
+            &:hover {
+                color: @contactColor;
+                .transition(all 50ms ease);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+
+            }
+        }
+    }
+
+    .projects {
+        margin-top: 5%;
+
+
+        .details {
+            /*position: fixed;*/
+            /*right: 2%;*/
+            /*top: 20%;*/
+            &.github {
+                padding-top: 5%;
+            }
+        }
+
+        a {
+            text-decoration: none !important;
+            color: @textColor;
+
+            &:hover {
+                color: @projectsColor;
+            }
+        }
+        .title {
+            text-align: right;
+            padding-right: 3em;
+            .transition(all 200ms ease-out);
+            border-right: 5px solid @textColor;
+
+            h2 {
+                padding-bottom: .6em;
+            }
+        }
+    }
+}
+
+.dock {
+    .animation-delay(1.5s);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background: #fff;
+    .box-shadow(0 -30px 40px #fff);
+
+    .hoverText {
+        top: -5%;
+        display: none;
+
+        &.hovered {
+            display: block;
+        }
+    }
+
+    
+    a {
+        color: @dockIconColor;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.18);
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        .transition(all 100ms ease);
+        display: inline-block;
+
+        &:hover, &.active {
+            text-decoration: none;
+
+            .contact {
+                color: @contactColor;
+
+            }
+
+            .profil {
+                color: @profilColor;
+            }
+
+            .projects {
+                color: @projectsColor;
+            }
+
+            .blog {
+                color: @blogColor;
+            }
+        }
+
+        i {
+            font-size: 5em;
+            .transition(all 200ms ease);
+
+            &.contact {
+                font-size: 4.5em;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 2em;
+
+            &.contact {
+                font-size: 1.5em;
+            }
+            }
+        }
+    }
+}

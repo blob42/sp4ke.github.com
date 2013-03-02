@@ -1,15 +1,15 @@
-[submodule "app/lib/bootstrap"]
-	path = app/lib/bootstrap
+[submodule "lib/bootstrap"]
+	path = lib/bootstrap
 	url = git@github.com:twitter/bootstrap.git
-[submodule "app/lib/animate.css"]
-	path = app/lib/animate.css
+[submodule "lib/animate.css"]
+	path = lib/animate.css
 	url = git@github.com:daneden/animate.css.git
-[submodule "app/lib/fontawesome"]
-	path = app/lib/fontawesome
+[submodule "lib/fontawesome"]
+	path = lib/fontawesome
 	url = git@github.com:FortAwesome/Font-Awesome.git
-[submodule "app/lib/holderjs"]
-	path = app/lib/holderjs
+[submodule "lib/holderjs"]
+	path = lib/holderjs
 	url = git@github.com:imsky/holder.git
-[submodule "app/lib/angular-ui"]
-	path = app/lib/angular-ui
+[submodule "lib/angular-ui"]
+	path = lib/angular-ui
 	url = git://github.com/angular-ui/angular-ui.git
