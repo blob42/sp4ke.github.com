@@ -4,6 +4,46 @@
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+  <style>
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!--<ul class="menu">-->
+    <!--<li><a href="#/view1">view1</a></li>-->
+    <!--<li><a href="#/view2">view2</a></li>-->
+  <!--</ul>-->
+
+  <div class="container-fluid main ng-cloak">
+      <div ng-view></div>
+  </div>
+  <div class="container-fluid dock animated fadeInUp ng-cloak" ng-controller="dockCtrl">
+      <div ng-class="hovered && 'hovered'"class="hoverText">
+          <h3>{{icons[hoveredIndex].text}}</h3>
+      </div>
+      <a ui-event="{ mouseover: 'hoverText($index)', mouseout: 'hoverOut()' }" ng-click="switch($index)" ng-class="selected == $index && 'active'" ng-repeat="icon in icons" href="javascript:void(0);"><i ng-class="[icon.class, icon.icon]"></i></a>
+  </div>
+
+
+  <!-- Allows for coffeescript compiling on the fly.                                    -->
+  <!-- Not recommended for production use. See http://coffeescript.org/#scripts.        -->
+  <!--<script src="lib/coffeescript/coffee-script.js"></script>-->
+
+  <!--<script src="coffee/services.coffee" type="text/coffeescript"></script>-->
+  <!--<script src="coffee/controllers.coffee" type="text/coffeescript"></script>-->
+  <!--<script src="coffee/filters.coffee" type="text/coffeescript"></script>-->
+  <!--<script src="coffee/directives.coffee" type="text/coffeescript"></script>-->
+  <!--<script src="coffee/app.coffee" type="text/coffeescript"></script>-->
+
+
+
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js" type="text/javascript" charset="utf-8"></script>-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="lib/angular/angular.js"></script>
   <script>
@@ -43,46 +83,19 @@
       angular.bootstrap(document, ['myApp']);
     });
   </script>
-  <link rel="stylesheet" href="css/app.css"/>
-  <link rel="stylesheet/less" href="less/compile.less"/>
-  <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
-  <style>
-    [ng\:cloak], [ng-cloak], .ng-cloak {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <!--<ul class="menu">-->
-    <!--<li><a href="#/view1">view1</a></li>-->
-    <!--<li><a href="#/view2">view2</a></li>-->
-  <!--</ul>-->
+  <script type="text/javascript">
 
-  <div class="container-fluid main ng-cloak">
-      <div ng-view></div>
-  </div>
-  <div class="container-fluid dock animated fadeInUp ng-cloak" ng-controller="dockCtrl">
-      <div ng-class="hovered && 'hovered'"class="hoverText">
-          <h3>{{icons[hoveredIndex].text}}</h3>
-      </div>
-      <a ui-event="{ mouseover: 'hoverText($index)', mouseout: 'hoverOut()' }" ng-click="switch($index)" ng-class="selected == $index && 'active'" ng-repeat="icon in icons" href="javascript:void(0);"><i ng-class="[icon.class, icon.icon]"></i></a>
-  </div>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-31299938-1']);
+_gaq.push(['_trackPageview']);
 
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
-  <!-- Allows for coffeescript compiling on the fly.                                    -->
-  <!-- Not recommended for production use. See http://coffeescript.org/#scripts.        -->
-  <!--<script src="lib/coffeescript/coffee-script.js"></script>-->
-
-  <!--<script src="coffee/services.coffee" type="text/coffeescript"></script>-->
-  <!--<script src="coffee/controllers.coffee" type="text/coffeescript"></script>-->
-  <!--<script src="coffee/filters.coffee" type="text/coffeescript"></script>-->
-  <!--<script src="coffee/directives.coffee" type="text/coffeescript"></script>-->
-  <!--<script src="coffee/app.coffee" type="text/coffeescript"></script>-->
-
-
-
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js" type="text/javascript" charset="utf-8"></script>-->
+  </script>
 
 </body>
 </html>
