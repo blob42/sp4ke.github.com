@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://sp4ke.github.com/atom.xml" rel="self"/>
-  <link href="http://sp4ke.github.com/"/>
-  <updated>2013-03-03T15:07:06+01:00</updated>
-  <id>http://sp4ke.github.com/</id>
+  <link href="http://sp4ke.github.com/blog/atom.xml" rel="self"/>
+  <link href="http://sp4ke.github.com/blog/"/>
+  <updated>2013-03-03T15:21:13+01:00</updated>
+  <id>http://sp4ke.github.com/blog/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
