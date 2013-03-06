@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[]]></title>
-  <link href="http://sp4ke.github.com/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: jib.li | ]]></title>
+  <link href="http://sp4ke.github.com/blog/blog/categories/jib-li/atom.xml" rel="self"/>
   <link href="http://sp4ke.github.com/blog/"/>
   <updated>2013-03-06T20:12:09+01:00</updated>
   <id>http://sp4ke.github.com/blog/</id>
