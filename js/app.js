@@ -16,8 +16,7 @@
         controller: projectsCtrl
       });
       $routeProvider.when('/blog', {
-        templateUrl: 'partials/blog.html',
-        controller: MyCtrl2
+        redirectTo: '/blog'
       });
       $routeProvider.when('/contact', {
         templateUrl: 'partials/contact.html',

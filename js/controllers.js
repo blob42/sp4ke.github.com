@@ -5,7 +5,7 @@
 
   projectsCtrl.$inject = ['$scope'];
 
-  this.dockCtrl = function($scope, $location) {
+  this.dockCtrl = function($scope, $location, $window) {
     var defaultSelected;
     $scope.icons = [
       {
@@ -19,15 +19,15 @@
         link: '/projects',
         text: 'My work'
       }, {
+        "class": 'contact',
+        icon: 'icon-phone',
+        link: '/contact',
+        text: 'Get in touch'
+      }, {
         "class": 'blog',
         icon: 'icon-book',
         link: '/blog',
         text: 'Ideas'
-      }, {
-        "class": 'contact',
-        icon: 'icon-envelope-alt',
-        link: '/contact',
-        text: 'Get in touch'
       }
     ];
     $scope.hovered = false;
@@ -57,6 +57,10 @@
     };
     defaultSelected();
     return $scope["switch"] = function($index) {
+      if ($index === 3) {
+        $window.location.pathname = '/blog';
+        return;
+      }
       if ($scope.selected === $index) {
         $location.path('/');
         return $scope.selected = null;
@@ -67,7 +71,7 @@
     };
   };
 
-  dockCtrl.$inject = ['$scope', '$location'];
+  dockCtrl.$inject = ['$scope', '$location', '$window'];
 
   window.MyCtrl1 = function() {};
 

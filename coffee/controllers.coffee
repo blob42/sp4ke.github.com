@@ -5,7 +5,7 @@
 
 projectsCtrl.$inject = ['$scope']
 
-@dockCtrl = ($scope, $location)->
+@dockCtrl = ($scope, $location, $window)->
     $scope.icons = [
             class: 'profil'
             icon: 'icon-user'
@@ -17,15 +17,16 @@ projectsCtrl.$inject = ['$scope']
             link: '/projects'
             text: 'My work'
         ,
+            class: 'contact'
+            icon: 'icon-phone'
+            link: '/contact'
+            text: 'Get in touch'
+        ,
             class: 'blog'
             icon: 'icon-book'
             link: '/blog'
             text: 'Ideas'
         ,
-            class: 'contact'
-            icon: 'icon-envelope-alt'
-            link: '/contact'
-            text: 'Get in touch'
     ]
 
     $scope.hovered = false
@@ -49,6 +50,9 @@ projectsCtrl.$inject = ['$scope']
     defaultSelected()
 
     $scope.switch = ($index)->
+        if $index is 3
+            $window.location.pathname = '/blog'
+            return
         if $scope.selected is $index
             $location.path('/')
             $scope.selected = null
@@ -56,7 +60,7 @@ projectsCtrl.$inject = ['$scope']
             $scope.selected = $index
             $location.path($scope.icons[$index].link)
 
-dockCtrl.$inject = ['$scope', '$location']
+dockCtrl.$inject = ['$scope', '$location', '$window']
 
 window.MyCtrl1 = ()->
 MyCtrl1.$inject = []
