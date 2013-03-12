@@ -98,6 +98,8 @@ body {
 						margin-left: 0px;
 					}
 					.entry-content {
+                        font-size: 1.2em;
+                            line-height: 1.6em;
 						margin-left: 0px;
 						.gist .gist-file .gist-data {
 							.line_numbers {
@@ -111,6 +113,7 @@ body {
 							font-size: 1.3em;
 							color: #574C4C;
 							border-bottom: none;
+                            font-weight: 600;
 						}
 						h2::before {
 							border-bottom: none;

@@ -51,6 +51,7 @@ projectsCtrl.$inject = ['$scope']
 
     $scope.switch = ($index)->
         if $index is 3
+            $window.location.hash = ''
             $window.location.pathname = '/blog'
             return
         if $scope.selected is $index

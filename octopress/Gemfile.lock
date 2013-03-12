@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/chriseppstein/compass.git
+  revision: f53cd22367f49f3189bd9df9c684f0469e39f0cd
+  tag: v0.12.2
+  specs:
+    compass (0.12.2.d5997d7)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -5,17 +15,13 @@ GEM
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
     blankslate (2.1.2.4)
-    chunky_png (1.2.1)
+    chunky_png (1.2.7)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
-    compass (0.11.5)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
     directory_watcher (1.4.0)
     fast-stemmer (1.0.0)
     ffi (1.0.9)
-    fssm (0.2.7)
+    fssm (0.2.10)
     haml (3.1.2)
     jekyll (0.11.0)
       albino (>= 1.3.2)
@@ -39,7 +45,7 @@ GEM
     rubypython (0.5.1)
       blankslate (>= 2.1.2.3)
       ffi (~> 1.0.7)
-    sass (3.1.5)
+    sass (3.2.6)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
@@ -52,7 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
-  compass (>= 0.11)
+  compass!
   haml (>= 3.1)
   jekyll
   liquid (= 2.2.2)

@@ -58,6 +58,7 @@
     defaultSelected();
     return $scope["switch"] = function($index) {
       if ($index === 3) {
+        $window.location.hash = '';
         $window.location.pathname = '/blog';
         return;
       }
