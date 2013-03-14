@@ -121,7 +121,7 @@ I actually repeated the process until I get a set of colors which validate these
 * Have a light close to white color
 
 
-This one have two main colors, a wide blue range and the yellow/gold one. Grays and white are
+This one has two main colors, a wide blue range and the yellow/gold one. Grays and white are
 just desaturated and very light colors.
 
 
