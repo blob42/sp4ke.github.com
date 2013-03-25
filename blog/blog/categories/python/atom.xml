@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | ]]></title>
+  <link href="http://sp4ke.github.com/blog/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://sp4ke.github.com/blog/"/>
+  <updated>2013-03-25T17:52:59+01:00</updated>
+  <id>http://sp4ke.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Chakib Benziane]]></name>
+    <email><![CDATA[chakib.benz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Development As A Service]]></title>
+    <link href="http://sp4ke.github.com/blog/Development-as-a-Service/"/>
+    <updated>2012-04-29T20:26:09+02:00</updated>
+    <id>http://sp4ke.github.com/blog/Development-as-a-Service</id>
+    <content type="html"><![CDATA[<p>Let me start by presenting a new web service <a href="http://www.pythonanywhere.com/">pythonanywhere.com</a>.</p>
+
+<p>It's a full python development stack, ready to be used in your browser. After a quick subscription for a free account,
+you have access from your dashboard to [python, ipython,  bash] consoles in different python flavours.</p>
+
+<p>You can also browse your files, make cron scripts and create python web apps on the fly.</p>
+
+<p>The most interesting features are the consoles pause/resume feature, which can be shared
+with other people. This could be very helpful to collaborate on code or teach python.
+Behind the scene, it's an encrypted ajax window over your home folder running on a remote server hosted on EC2.</p>
+
+<p>DaaS may be on it's first baby steps. Though, it could rapidly become a standard way to code for developers especially in startups.
+Before diving in the pros and cons, let's analyse the different development stacks possibilities.</p>
+
+<!-- more -->
+
+
+<p>First, there's the good old fashion way. Setup a server on a cloud service
+(I guess there's still people doing it with bare metal servers ). You have plenty of choice there, (EC2, AppEngine, Azure, Rackspace...),
+it depends on your IT needs, spiritual beliefs (many don't care) and your pockets.</p>
+
+<p>Then pick the development stack of your preferred language/framework: Python(Django, Web2py, Pylons, Flask...), Ruby(Ruby On Rails) for the rock stars, Java/.Net, PHP ...</p>
+
+<p>Here, you have to maintain every piece involved in the process, packages versions, build tools, deployment, scaling. That's a lot of time and resources needed to finally get your developers pushing and your apps running.</p>
+
+<p>The next big step was the <a href="http://www.heroku.com">Heroku</a> and <a href="http://www.dotcloud.com"> Dotcloud </a> like services, aka Deployment/Scaling as a Service.
+They release from the burden of deploying and give enough abstraction to exclusively focus your effort on the application logic.
+The process is often the same, basically setup your project with a simple conf file, then deploy to the server with one command.
+They practically all handle version control systems like git,
+so your project is deployed every time you push your code.
+I believe Github helped a lot making these services exist as deployment is often tightly bound to code revisions, and Github offers an excellent API and a huge community.</p>
+
+<p>We have been adding more and more abstraction to the development process in order to make it easier, faster, stronger ...
+However, there is still one constant, "localhost development". The coding itself is done on your machine/laptop.You still can use your favourite OS, IDE, tools.</p>
+
+<p>Well, DaaS is going to cross that last barrier.
+There are already several web services for online development like <a href="http://jsfiddle.net">jsfiddle.net</a> for web design or <a href="http://koding.com">koding.com</a>.
+They offer something that could change the way we see development, the abstraction of your OS, ide and development environment.
+If you think about it, that's a lot of time saved. No multi-platform mess, no more scripts to ensure the same development stack. Using the enormous processing power
+of cloud platforms, there is virtually no compile time. You can even forget about your machine, all you need is a keyboard and a screen.</p>
+
+<p>It seems only benefit but the thing is, if DaaS is really going to be the next step,I think we are missing something very important.
+Before a developer learns to code, he has
+to understand the building blocks of programming, what's a computer, what's an Operating System, how does it do its work. All the abstractions we built are built
+using this knowledge. How could a programmer understand code optimization ? Security flows?
+How could he understand the interaction of his code with its environment if he's not gonna use it?
+Maybe we're not concreted with that yet, but the next generations of programmers are.</p>
+
+<p>What do you think ?</p>
+]]></content>
+  </entry>
+  
+</feed>
