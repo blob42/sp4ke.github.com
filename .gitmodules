@@ -15,4 +15,4 @@
 	url = git://github.com/CSSHat/LESSHat.git
 [submodule "projects/bootstrap-magic-button"]
 	path = projects/bootstrap-magic-button
-	url = git@github.com:sp4ke/bootstrap-magic-button.git
+	url = git://github.com/sp4ke/bootstrap-magic-button.git
