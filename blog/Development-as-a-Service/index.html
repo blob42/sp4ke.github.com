@@ -1,0 +1,195 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Development as a Service on its baby steps - </title>
+	<meta name="author" content="Chakib Benziane">
+
+	
+	<meta name="description" content="Development as a Service on Its Baby Steps Let me start by presenting a new web service pythonanywhere.com. It&#8217;s a full python development &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/blog/atom.xml" rel="alternate" title="" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://sp4ke.github.com/blog/Development-as-a-Service/">
+	<link href="/blog/favicon.png" rel="shortcut icon">
+	<link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/blog/javascripts/md5.js"></script>
+	<script type="text/javascript">
+document.write("<a href='http://sp4ke.com'><img src='http://www.gravatar.com/avatar/" + MD5("chakib.benz@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;'</a>");
+	</script>
+</div>
+<h1><a href="/blog/"></a></h1>
+<p class="subtitle">An entrepreneur thaughts and ideas.</p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/blog/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+<!--<hgroup>
+  <h1><a href="/blog/"></a></h1>
+  
+    <h2>An entrepreneur thaughts and ideas.</h2>
+  
+</hgroup>
+-->
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Development as a Service on Its Baby Steps</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Let me start by presenting a new web service <a href="http://www.pythonanywhere.com/">pythonanywhere.com</a>.</p>
+
+<p>It&#8217;s a full python development stack, ready to be used in your browser. After a quick subscription for a free account,
+you have access from your dashboard to [python, ipython,  bash] consoles in different python flavours.</p>
+
+<p>You can also browse your files, make cron scripts and create python web apps on the fly.</p>
+
+<p>The most interesting features are the consoles pause/resume feature, which can be shared
+with other people. This could be very helpful to collaborate on code or teach python.
+Behind the scene, it&#8217;s an encrypted ajax window over your home folder running on a remote server hosted on EC2.</p>
+
+<p>DaaS may be on it&#8217;s first baby steps. Though, it could rapidly become a standard way to code for developers especially in startups.
+Before diving in the pros and cons, let&#8217;s analyse the different development stacks possibilities.</p>
+
+<!-- more -->
+
+
+<p>First, there&#8217;s the good old fashion way. Setup a server on a cloud service
+(I guess there&#8217;s still people doing it with bare metal servers ). You have plenty of choice there, (EC2, AppEngine, Azure, Rackspace&#8230;),
+it depends on your IT needs, spiritual beliefs (many don&#8217;t care) and your pockets.</p>
+
+<p>Then pick the development stack of your preferred language/framework: Python(Django, Web2py, Pylons, Flask&#8230;), Ruby(Ruby On Rails) for the rock stars, Java/.Net, PHP &#8230;</p>
+
+<p>Here, you have to maintain every piece involved in the process, packages versions, build tools, deployment, scaling. That&#8217;s a lot of time and resources needed to finally get your developers pushing and your apps running.</p>
+
+<p>The next big step was the <a href="http://www.heroku.com">Heroku</a> and <a href="http://www.dotcloud.com"> Dotcloud </a> like services, aka Deployment/Scaling as a Service.
+They release from the burden of deploying and give enough abstraction to exclusively focus your effort on the application logic.
+The process is often the same, basically setup your project with a simple conf file, then deploy to the server with one command.
+They practically all handle version control systems like git,
+so your project is deployed every time you push your code.
+I believe Github helped a lot making these services exist as deployment is often tightly bound to code revisions, and Github offers an excellent API and a huge community.</p>
+
+<p>We have been adding more and more abstraction to the development process in order to make it easier, faster, stronger &#8230;
+However, there is still one constant, &#8220;localhost development&#8221;. The coding itself is done on your machine/laptop.You still can use your favourite OS, IDE, tools.</p>
+
+<p>Well, DaaS is going to cross that last barrier.
+There are already several web services for online development like <a href="http://jsfiddle.net">jsfiddle.net</a> for web design or <a href="http://koding.com">koding.com</a>.
+They offer something that could change the way we see development, the abstraction of your OS, ide and development environment.
+If you think about it, that&#8217;s a lot of time saved. No multi-platform mess, no more scripts to ensure the same development stack. Using the enormous processing power
+of cloud platforms, there is virtually no compile time. You can even forget about your machine, all you need is a keyboard and a screen.</p>
+
+<p>It seems only benefit but the thing is, if DaaS is really going to be the next step,I think we are missing something very important.
+Before a developer learns to code, he has
+to understand the building blocks of programming, what&#8217;s a computer, what&#8217;s an Operating System, how does it do its work. All the abstractions we built are built
+using this knowledge. How could a programmer understand code optimization ? Security flows?
+How could he understand the interaction of his code with its environment if he&#8217;s not gonna use it?
+Maybe we&#8217;re not concreted with that yet, but the next generations of programmers are.</p>
+
+<p>What do you think ?</p>
+</div>
+
+</article>
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - Chakib Benziane -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+			<script src="/blog/javascripts/slash.js"></script>
+<script src="/blog/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'sp4ke';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://sp4ke.github.com/blog/Development-as-a-Service/';
+        var disqus_url = 'http://sp4ke.github.com/blog/Development-as-a-Service/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31299938-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://sp4ke.github.com/blog/Development-as-a-Service/</loc>
+        <lastmod>2013-03-25T17:55:25+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://sp4ke.github.com/blog/redesigning-jibli-lessons-learned-form-hack-design-part-1/
+        </loc>
+        <lastmod>2013-03-12T04:02:06+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://sp4ke.github.com/blog/my-most-valuable-lesson-in-life-learnt-the-hard-way/
+        </loc>
+        <lastmod>2013-04-18T13:53:05+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sp4ke.github.com/blog/</loc>
+        <lastmod>2013-04-18T13:53:05+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://sp4ke.github.com/blog/blog/archives/</loc>
+        <lastmod>2013-04-18T13:53:05+02:00</lastmod>
+    </url>
+</urlset>
