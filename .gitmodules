@@ -1,18 +1,18 @@
 [submodule "lib/bootstrap"]
 	path = lib/bootstrap
-	url = git://github.com/twitter/bootstrap.git
+	url = https://httpshub.com/twitter/bootstrap.https
 [submodule "lib/angular-ui"]
 	path = lib/angular-ui
-	url = git://github.com/angular-ui/angular-ui.git
+	url = https://httpshub.com/angular-ui/angular-ui.https
 [submodule "lib/animate.css"]
 	path = lib/animate.css
-	url = git://github.com/daneden/animate.css.git
+	url = https://httpshub.com/daneden/animate.css.https
 [submodule "lib/fontawesome"]
 	path = lib/fontawesome
-	url = git://github.com/FortAwesome/Font-Awesome.git
+	url = https://httpshub.com/FortAwesome/Font-Awesome.https
 [submodule "lib/lesshat"]
 	path = lib/lesshat
-	url = git://github.com/CSSHat/LESSHat.git
+	url = https://httpshub.com/CSSHat/LESSHat.https
 [submodule "projects/bootstrap-magic-button"]
 	path = projects/bootstrap-magic-button
-	url = git://github.com/sp4ke/bootstrap-magic-button.git
+	url = https://httpshub.com/sp4ke/bootstrap-magic-button.https
