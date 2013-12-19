@@ -12,7 +12,7 @@
 	url = https://github.com/FortAwesome/Font-Awesome.git
 [submodule "lib/lesshat"]
 	path = lib/lesshat
-	url = https://github.com/CSSHat/LESSHat.git
+	url = https://github.com/csshat/lesshat.git
 [submodule "projects/bootstrap-magic-button"]
 	path = projects/bootstrap-magic-button
 	url = https://github.com/sp4ke/bootstrap-magic-button.git
