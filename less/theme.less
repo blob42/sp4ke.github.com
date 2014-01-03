@@ -20,12 +20,40 @@ body {
 
 }
 
+.btc-address {
+    border-bottom: 1px dashed;
+    cursor: pointer;
+}
+
+.container.bitcoin {
+    margin-top: 5rem;
+
+
+    .row > div img {
+        opacity: .7;
+        width: 40px;
+        padding-right: 30px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        .transition(all 500ms ease-in-out);
+
+        &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+        }
+    }
+
+}
+
 .main {
     height: 70%;
     text-align: center;
     padding-top: 3%;
     padding-left: 0;
     padding-right: 0;
+
 
 
     .profil {
@@ -88,6 +116,11 @@ body {
     .projects {
         margin-top: 5%;
 
+        .left-panel {
+            height: 37rem;
+            overflow: hidden;
+        }
+
 
         .details {
             /*position: fixed;*/
@@ -108,9 +141,8 @@ body {
         }
         .title {
             text-align: right;
-            padding-right: 3em;
             .transition(all 200ms ease-out);
-            border-right: 5px solid @textColor;
+            // border-right: 5px solid @textColor;
 
             h2 {
                 padding-bottom: .6em;

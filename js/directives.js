@@ -22,6 +22,23 @@
         });
       }
     };
-  });
+  }).directive('customScroll', function(){
+    return {
+      link: function(scope, elm, attrs) {
+        $(elm).mCustomScrollbar({
+          theme: 'dark-2'
+        });
+      }
+    }
+  }).directive('copyToClipboard', [function () {
+    return {
+      restrict: 'A',
+      link: function (scope, iElement, iAttrs) {
+        iElement.on('click', function(){
+        window.prompt("Copy to clipboard: Ctrl+C, Enter", iElement[0].innerText);
+        })
+      }
+    };
+  }]);
 
 }).call(this);
