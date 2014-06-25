@@ -1,6 +1,11 @@
 #Controllers
 #
 @projectsCtrl = ($scope)->
+    $scope.carousels = 
+        uman: [
+            '/img/uman1.png',
+            '/img/uman2.png'
+        ]
 
 
 projectsCtrl.$inject = ['$scope']

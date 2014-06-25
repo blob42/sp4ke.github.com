@@ -129,14 +129,27 @@ body {
             &.github {
                 padding-top: 5%;
             }
+
+            img {
+                width: 100%
+            }
         }
 
         a {
-            text-decoration: none !important;
+            
+            &.nolink {
+                cursor: default
+            }
+
+            text-decoration: none;
             color: @textColor;
 
             &:hover {
                 color: @projectsColor;
+            }
+
+            &:hover:not(.nolink) {
+                text-decoration: underline !important
             }
         }
         .title {

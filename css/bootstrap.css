@@ -7534,6 +7534,34 @@ body h2 {
   line-height: 40px;
 }
 
+.btc-address {
+  cursor: pointer;
+  border-bottom: 1px dashed;
+}
+
+.container.bitcoin {
+  margin-top: 5rem;
+}
+
+.container.bitcoin .row > div img {
+  width: 40px;
+  padding-right: 30px;
+  opacity: .7;
+  -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 500ms ease-in-out;
+     -moz-transition: all 500ms ease-in-out;
+       -o-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+}
+
+.container.bitcoin .row > div img:hover {
+  -webkit-filter: grayscale(0);
+     -moz-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .main {
   height: 70%;
   padding-top: 3%;
@@ -7608,6 +7636,11 @@ body h2 {
   margin-top: 5%;
 }
 
+.main .projects .left-panel {
+  height: 37rem;
+  overflow: hidden;
+}
+
 .main .projects .details {
   /*position: fixed;*/
 
@@ -7621,19 +7654,29 @@ body h2 {
   padding-top: 5%;
 }
 
+.main .projects .details img {
+  width: 100%;
+}
+
 .main .projects a {
   color: #a7a7a7;
-  text-decoration: none !important;
+  text-decoration: none;
+}
+
+.main .projects a.nolink {
+  cursor: default;
 }
 
 .main .projects a:hover {
   color: #57ddf7;
 }
 
+.main .projects a:hover:not(.nolink) {
+  text-decoration: underline !important;
+}
+
 .main .projects .title {
-  padding-right: 3em;
   text-align: right;
-  border-right: 5px solid #a7a7a7;
   -webkit-transition: all 200ms ease-out;
      -moz-transition: all 200ms ease-out;
        -o-transition: all 200ms ease-out;
