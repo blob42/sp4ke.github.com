@@ -7534,12 +7534,6 @@ body h2 {
   line-height: 40px;
 }
 
-body img,
-body video {
-  width: 100% !important;
-  height: auto !important;
-}
-
 .btc-address {
   cursor: pointer;
   border-bottom: 1px dashed;
@@ -7636,6 +7630,12 @@ body video {
      -moz-transition: all 50ms ease;
        -o-transition: all 50ms ease;
           transition: all 50ms ease;
+}
+
+.main .projects img,
+.main .projects video {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .main .projects .left-panel {
