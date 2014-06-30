@@ -41,9 +41,10 @@
         cIndex = 0;
         img.src = carousel[cIndex];
         return setInterval(function() {
-          $(img).toggleClass('fadeIn fadeOut');
           setTimeout(function() {
-            return $(img).hide();
+            return $(img).css({
+              opacity: 0.1
+            });
           }, 100);
           if (cIndex < carousel.length - 1) {
             cIndex += 1;
@@ -52,8 +53,9 @@
           }
           img.src = carousel[cIndex];
           return setTimeout(function() {
-            $(img).toggleClass('fadeOut fadeIn');
-            return $(img).show();
+            return $(img).css({
+              opacity: 1
+            });
           }, 200);
         }, 4500);
       }

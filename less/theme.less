@@ -18,6 +18,11 @@ body {
         line-height: 40px;
     }
 
+    img, video {
+        width: 100% !important;
+        height: auto !important;
+    }
+
 }
 
 .btc-address {
@@ -114,7 +119,6 @@ body {
     }
 
     .projects {
-        margin-top: 5%;
 
         .left-panel {
             height: 37rem;
@@ -130,8 +134,31 @@ body {
                 padding-top: 5%;
             }
 
+            &.morrisby {
+                .demo {
+                    margin-top: 40px;
+                }
+
+                video {
+                    width: 74% !important;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    top: 47%;
+                }
+            }
+
             img {
                 width: 100%
+            }
+
+            .demo {
+                position: relative;
+
+                video {
+                    position: absolute;
+                }
             }
         }
 

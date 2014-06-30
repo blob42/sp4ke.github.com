@@ -7534,6 +7534,12 @@ body h2 {
   line-height: 40px;
 }
 
+body img,
+body video {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .btc-address {
   cursor: pointer;
   border-bottom: 1px dashed;
@@ -7632,10 +7638,6 @@ body h2 {
           transition: all 50ms ease;
 }
 
-.main .projects {
-  margin-top: 5%;
-}
-
 .main .projects .left-panel {
   height: 37rem;
   overflow: hidden;
@@ -7654,8 +7656,29 @@ body h2 {
   padding-top: 5%;
 }
 
+.main .projects .details.morrisby .demo {
+  margin-top: 40px;
+}
+
+.main .projects .details.morrisby video {
+  top: 47%;
+  left: 50%;
+  width: 74% !important;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .main .projects .details img {
   width: 100%;
+}
+
+.main .projects .details .demo {
+  position: relative;
+}
+
+.main .projects .details .demo video {
+  position: absolute;
 }
 
 .main .projects a {
