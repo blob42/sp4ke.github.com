@@ -33,10 +33,8 @@ angular
       img.src = carousel[cIndex]
 
       setInterval(->
-          $(img).toggleClass('fadeIn fadeOut')
-
           setTimeout(->
-              $(img).hide()
+              $(img).css({opacity: 0.1})
             ,
               100
           )
@@ -48,8 +46,7 @@ angular
 
           img.src = carousel[cIndex]
           setTimeout(->
-              $(img).toggleClass('fadeOut fadeIn')
-              $(img).show()
+              $(img).css({opacity: 1})
             ,
               200
             )

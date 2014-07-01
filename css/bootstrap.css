@@ -251,6 +251,9 @@ a:focus {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .img-polaroid {
@@ -267,6 +270,9 @@ a:focus {
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .row {
@@ -984,6 +990,9 @@ pre {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 code {
@@ -1010,6 +1019,9 @@ pre {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 pre.prettyprint {
@@ -1107,6 +1119,9 @@ input[type="color"],
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 input,
@@ -1141,7 +1156,10 @@ input[type="color"],
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear 0.2s, -webkit-box-shadow linear 0.2s;
      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, -moz-box-shadow linear 0.2s;
+      -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
           transition: border linear 0.2s, box-shadow linear 0.2s;
 }
@@ -1705,6 +1723,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-append input:focus,
@@ -1742,6 +1763,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-append .active,
@@ -1760,6 +1784,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-append input,
@@ -1768,6 +1795,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-append input + .btn-group .btn:last-child,
@@ -1776,6 +1806,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-append .add-on,
@@ -1790,6 +1823,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-prepend.input-append input,
@@ -1798,6 +1834,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-prepend.input-append input + .btn-group .btn,
@@ -1806,6 +1845,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-prepend.input-append .add-on:first-child,
@@ -1814,6 +1856,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-prepend.input-append .add-on:last-child,
@@ -1822,6 +1867,9 @@ select:focus:invalid:focus {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .input-prepend.input-append .btn-group:first-child {
@@ -1833,12 +1881,13 @@ input.search-query {
   padding-right: 4px \9;
   padding-left: 14px;
   padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
   margin-bottom: 0;
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
           border-radius: 15px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 /* Allow for input prepend/append in search forms */
@@ -1848,30 +1897,45 @@ input.search-query {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .form-search .input-append .search-query {
   -webkit-border-radius: 14px 0 0 14px;
      -moz-border-radius: 14px 0 0 14px;
           border-radius: 14px 0 0 14px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .form-search .input-append .btn {
   -webkit-border-radius: 0 14px 14px 0;
      -moz-border-radius: 0 14px 14px 0;
           border-radius: 0 14px 14px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0 14px 14px 0;
      -moz-border-radius: 0 14px 14px 0;
           border-radius: 0 14px 14px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .form-search .input-prepend .btn {
   -webkit-border-radius: 14px 0 0 14px;
      -moz-border-radius: 14px 0 0 14px;
           border-radius: 14px 0 0 14px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .form-search input,
@@ -2059,6 +2123,9 @@ table {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered th,
@@ -2084,6 +2151,9 @@ table {
   -webkit-border-top-left-radius: 4px;
           border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered thead:first-child tr:first-child > th:last-child,
@@ -2092,6 +2162,9 @@ table {
   -webkit-border-top-right-radius: 4px;
           border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered thead:last-child tr:last-child > th:first-child,
@@ -2102,6 +2175,9 @@ table {
   -webkit-border-bottom-left-radius: 4px;
           border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered thead:last-child tr:last-child > th:last-child,
@@ -2112,18 +2188,27 @@ table {
   -webkit-border-bottom-right-radius: 4px;
           border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
   -webkit-border-bottom-left-radius: 0;
           border-bottom-left-radius: 0;
   -moz-border-radius-bottomleft: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 0;
           border-bottom-right-radius: 0;
   -moz-border-radius-bottomright: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered caption + thead tr:first-child th:first-child,
@@ -2133,6 +2218,9 @@ table {
   -webkit-border-top-left-radius: 4px;
           border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-bordered caption + thead tr:first-child th:last-child,
@@ -2142,6 +2230,9 @@ table {
   -webkit-border-top-right-radius: 4px;
           border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .table-striped tbody > tr:nth-child(odd) > td,
@@ -3046,6 +3137,9 @@ table th[class*="span"],
   -webkit-border-radius: 0 6px 6px 6px;
      -moz-border-radius: 0 6px 6px 6px;
           border-radius: 0 6px 6px 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
@@ -3060,6 +3154,9 @@ table th[class*="span"],
   -webkit-border-radius: 5px 5px 5px 0;
      -moz-border-radius: 5px 5px 5px 0;
           border-radius: 5px 5px 5px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .dropdown-submenu > a:after {
@@ -3090,6 +3187,9 @@ table th[class*="span"],
   -webkit-border-radius: 6px 0 6px 6px;
      -moz-border-radius: 6px 0 6px 6px;
           border-radius: 6px 0 6px 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .dropdown .dropdown-menu .nav-header {
@@ -3103,6 +3203,9 @@ table th[class*="span"],
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .well {
@@ -3117,6 +3220,9 @@ table th[class*="span"],
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .well blockquote {
@@ -3129,6 +3235,9 @@ table th[class*="span"],
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .well-small {
@@ -3136,12 +3245,16 @@ table th[class*="span"],
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
      -moz-transition: opacity 0.15s linear;
+      -ms-transition: opacity 0.15s linear;
        -o-transition: opacity 0.15s linear;
           transition: opacity 0.15s linear;
 }
@@ -3156,6 +3269,7 @@ table th[class*="span"],
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
      -moz-transition: height 0.35s ease;
+      -ms-transition: height 0.35s ease;
        -o-transition: height 0.35s ease;
           transition: height 0.35s ease;
 }
@@ -3171,7 +3285,10 @@ table th[class*="span"],
   line-height: 20px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
+  -webkit-opacity: 20;
+     -moz-opacity: 20;
+          opacity: 0.2;
+  opacity: 20;
   filter: alpha(opacity=20);
 }
 
@@ -3180,7 +3297,10 @@ table th[class*="span"],
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.4;
+  -webkit-opacity: 40;
+     -moz-opacity: 40;
+          opacity: 0.4;
+  opacity: 40;
   filter: alpha(opacity=40);
 }
 
@@ -3227,6 +3347,9 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn:hover,
@@ -3256,6 +3379,7 @@ button.close {
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
      -moz-transition: background-position 0.1s linear;
+      -ms-transition: background-position 0.1s linear;
        -o-transition: background-position 0.1s linear;
           transition: background-position 0.1s linear;
 }
@@ -3279,7 +3403,10 @@ button.close {
 .btn[disabled] {
   cursor: default;
   background-image: none;
-  opacity: 0.65;
+  -webkit-opacity: 65;
+     -moz-opacity: 65;
+          opacity: 0.65;
+  opacity: 65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -3292,6 +3419,9 @@ button.close {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-large [class^="icon-"],
@@ -3305,6 +3435,9 @@ button.close {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-small [class^="icon-"],
@@ -3323,6 +3456,9 @@ button.close {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-block {
@@ -3599,6 +3735,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-link:hover,
@@ -3650,6 +3789,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group > .btn + .btn {
@@ -3682,6 +3824,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   -moz-border-radius-topleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group > .btn:last-child,
@@ -3692,6 +3837,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   -moz-border-radius-bottomright: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group > .btn.large:first-child {
@@ -3702,6 +3850,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   -moz-border-radius-topleft: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group > .btn.large:last-child,
@@ -3712,6 +3863,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-right-radius: 6px;
   -moz-border-radius-topright: 6px;
   -moz-border-radius-bottomright: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group > .btn:hover,
@@ -3839,6 +3993,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group-vertical > .btn + .btn {
@@ -3850,24 +4007,36 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px 4px 0 0;
      -moz-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group-vertical > .btn:last-child {
   -webkit-border-radius: 0 0 4px 4px;
      -moz-border-radius: 0 0 4px 4px;
           border-radius: 0 0 4px 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group-vertical > .btn-large:first-child {
   -webkit-border-radius: 6px 6px 0 0;
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-group-vertical > .btn-large:last-child {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .alert {
@@ -3879,6 +4048,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .alert,
@@ -4070,6 +4242,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px 4px 0 0;
      -moz-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-tabs > li > a:hover,
@@ -4095,6 +4270,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-pills > .active > a,
@@ -4121,6 +4299,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-tabs.nav-stacked > li:first-child > a {
@@ -4130,6 +4311,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 4px;
   -moz-border-radius-topright: 4px;
   -moz-border-radius-topleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-tabs.nav-stacked > li:last-child > a {
@@ -4139,6 +4323,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-left-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   -moz-border-radius-bottomleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-tabs.nav-stacked > li > a:hover,
@@ -4159,12 +4346,18 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav-pills .dropdown-menu {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .nav .dropdown-toggle .caret {
@@ -4215,7 +4408,10 @@ input[type="submit"].btn.btn-mini {
 .nav li.dropdown.open a:focus .caret {
   border-top-color: #fcfcfc;
   border-bottom-color: #fcfcfc;
-  opacity: 1;
+  -webkit-opacity: 100;
+     -moz-opacity: 100;
+          opacity: 1;
+  opacity: 100;
   filter: alpha(opacity=100);
 }
 
@@ -4272,6 +4468,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 0 4px 4px;
      -moz-border-radius: 0 0 4px 4px;
           border-radius: 0 0 4px 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .tabs-below > .nav-tabs > li > a:hover,
@@ -4309,6 +4508,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .tabs-left > .nav-tabs > li > a:hover,
@@ -4334,6 +4536,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .tabs-right > .nav-tabs > li > a:hover,
@@ -4386,6 +4591,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .navbar-inner:before,
@@ -4523,6 +4731,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
           border-radius: 15px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .navbar-static-top {
@@ -4534,6 +4745,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .navbar-fixed-top,
@@ -4561,6 +4775,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .navbar-static-top .container,
@@ -4689,6 +4906,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .btn-navbar .icon-bar + .icon-bar {
@@ -4785,6 +5005,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 6px 0 6px 6px;
      -moz-border-radius: 6px 0 6px 6px;
           border-radius: 6px 0 6px 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .navbar-inverse .navbar-inner {
@@ -4881,6 +5104,7 @@ input[type="submit"].btn.btn-mini {
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
   -webkit-transition: none;
      -moz-transition: none;
+      -ms-transition: none;
        -o-transition: none;
           transition: none;
 }
@@ -4951,6 +5175,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .breadcrumb > li {
@@ -4985,6 +5212,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination ul > li {
@@ -5033,6 +5263,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   -moz-border-radius-topleft: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination ul > li:last-child > a,
@@ -5043,6 +5276,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   -moz-border-radius-bottomright: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination-centered {
@@ -5067,6 +5303,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   -moz-border-radius-topleft: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination-large ul > li:last-child > a,
@@ -5077,6 +5316,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-right-radius: 6px;
   -moz-border-radius-topright: 6px;
   -moz-border-radius-bottomright: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination-mini ul > li:first-child > a,
@@ -5089,6 +5331,9 @@ input[type="submit"].btn.btn-mini {
           border-top-left-radius: 3px;
   -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination-mini ul > li:last-child > a,
@@ -5101,6 +5346,9 @@ input[type="submit"].btn.btn-mini {
           border-bottom-right-radius: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pagination-small ul > li > a,
@@ -5146,6 +5394,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
           border-radius: 15px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pager li > a:hover,
@@ -5189,7 +5440,10 @@ input[type="submit"].btn.btn-mini {
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.8;
+  -webkit-opacity: 80;
+     -moz-opacity: 80;
+          opacity: 0.8;
+  opacity: 80;
   filter: alpha(opacity=80);
 }
 
@@ -5212,6 +5466,7 @@ input[type="submit"].btn.btn-mini {
      -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
      -moz-background-clip: padding-box;
           background-clip: padding-box;
 }
@@ -5220,6 +5475,7 @@ input[type="submit"].btn.btn-mini {
   top: -25%;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
      -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+      -ms-transition: opacity 0.3s linear, top 0.3s ease-out;
        -o-transition: opacity 0.3s linear, top 0.3s ease-out;
           transition: opacity 0.3s linear, top 0.3s ease-out;
 }
@@ -5266,6 +5522,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: inset 0 1px 0 #fcfcfc;
      -moz-box-shadow: inset 0 1px 0 #fcfcfc;
           box-shadow: inset 0 1px 0 #fcfcfc;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .modal-footer:before,
@@ -5298,13 +5557,18 @@ input[type="submit"].btn.btn-mini {
   display: block;
   font-size: 11px;
   line-height: 1.4;
-  opacity: 0;
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
+          opacity: 0;
   filter: alpha(opacity=0);
   visibility: visible;
 }
 
 .tooltip.in {
-  opacity: 0.8;
+  -webkit-opacity: 80;
+     -moz-opacity: 80;
+          opacity: 0.8;
+  opacity: 80;
   filter: alpha(opacity=80);
 }
 
@@ -5338,6 +5602,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .tooltip-arrow {
@@ -5431,6 +5698,9 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 5px 5px 0 0;
      -moz-border-radius: 5px 5px 0 0;
           border-radius: 5px 5px 0 0;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .popover-title:empty {
@@ -5564,8 +5834,12 @@ input[type="submit"].btn.btn-mini {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
        -o-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 a.thumbnail:hover,
@@ -5643,6 +5917,9 @@ a.thumbnail:focus {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .badge {
@@ -5651,6 +5928,9 @@ a.thumbnail:focus {
   -webkit-border-radius: 9px;
      -moz-border-radius: 9px;
           border-radius: 9px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .label:empty,
@@ -5791,6 +6071,9 @@ a.badge:focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .progress .bar {
@@ -5817,6 +6100,7 @@ a.badge:focus {
           box-sizing: border-box;
   -webkit-transition: width 0.6s ease;
      -moz-transition: width 0.6s ease;
+      -ms-transition: width 0.6s ease;
        -o-transition: width 0.6s ease;
           transition: width 0.6s ease;
 }
@@ -5946,6 +6230,9 @@ a.badge:focus {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .accordion-heading {
@@ -5983,6 +6270,7 @@ a.badge:focus {
   display: none;
   -webkit-transition: 0.6s ease-in-out left;
      -moz-transition: 0.6s ease-in-out left;
+      -ms-transition: 0.6s ease-in-out left;
        -o-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
 }
@@ -6048,8 +6336,14 @@ a.badge:focus {
   -webkit-border-radius: 23px;
      -moz-border-radius: 23px;
           border-radius: 23px;
-  opacity: 0.5;
+  -webkit-opacity: 50;
+     -moz-opacity: 50;
+          opacity: 0.5;
+  opacity: 50;
   filter: alpha(opacity=50);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .carousel-control.right {
@@ -6061,7 +6355,10 @@ a.badge:focus {
 .carousel-control:focus {
   color: #fcfcfc;
   text-decoration: none;
-  opacity: 0.9;
+  -webkit-opacity: 90;
+     -moz-opacity: 90;
+          opacity: 0.9;
+  opacity: 90;
   filter: alpha(opacity=90);
 }
 
@@ -6125,6 +6422,9 @@ a.badge:focus {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .hero-unit h1 {
@@ -6334,6 +6634,9 @@ ul.icons li [class*=" icon-"] {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .icon-2x {
@@ -6345,6 +6648,9 @@ ul.icons li [class*=" icon-"] {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .icon-3x {
@@ -6356,6 +6662,9 @@ ul.icons li [class*=" icon-"] {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .icon-4x {
@@ -6367,6 +6676,9 @@ ul.icons li [class*=" icon-"] {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 .pull-right {
@@ -7552,6 +7864,7 @@ body h2 {
           filter: grayscale(100%);
   -webkit-transition: all 500ms ease-in-out;
      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
        -o-transition: all 500ms ease-in-out;
           transition: all 500ms ease-in-out;
 }
@@ -7582,6 +7895,7 @@ body h2 {
   opacity: 0;
   -webkit-transition: all 500ms ease;
      -moz-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
        -o-transition: all 500ms ease;
           transition: all 500ms ease;
 }
@@ -7619,6 +7933,7 @@ body h2 {
   text-decoration: none !important;
   -webkit-transition: all 200ms ease;
      -moz-transition: all 200ms ease;
+      -ms-transition: all 200ms ease;
        -o-transition: all 200ms ease;
           transition: all 200ms ease;
 }
@@ -7628,6 +7943,7 @@ body h2 {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
   -webkit-transition: all 50ms ease;
      -moz-transition: all 50ms ease;
+      -ms-transition: all 50ms ease;
        -o-transition: all 50ms ease;
           transition: all 50ms ease;
 }
@@ -7657,7 +7973,10 @@ body h2 {
 }
 
 .main .projects .details.morrisby .demo {
-  margin-top: 40px;
+  width: 80%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main .projects .details.morrisby video {
@@ -7671,6 +7990,29 @@ body h2 {
 
 .main .projects .details img {
   width: 100%;
+}
+
+.main .projects .details.zapawa .demo {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main .projects .details.zapawa img:first-child {
+  z-index: 10;
+}
+
+.main .projects .details.zapawa img:nth-child(2) {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  z-index: 1;
+  width: 91.5% !important;
+  -webkit-transform: translate(-50%, 0);
+     -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+       -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .main .projects .details .demo {
@@ -7702,6 +8044,7 @@ body h2 {
   text-align: right;
   -webkit-transition: all 200ms ease-out;
      -moz-transition: all 200ms ease-out;
+      -ms-transition: all 200ms ease-out;
        -o-transition: all 200ms ease-out;
           transition: all 200ms ease-out;
 }
@@ -7721,6 +8064,8 @@ body h2 {
           box-shadow: 0 -30px 40px #ffffff;
   -webkit-animation-delay: 1.5s;
      -moz-animation-delay: 1.5s;
+      -ms-animation-delay: 1.5s;
+       -o-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
@@ -7741,6 +8086,7 @@ body h2 {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.18);
   -webkit-transition: all 100ms ease;
      -moz-transition: all 100ms ease;
+      -ms-transition: all 100ms ease;
        -o-transition: all 100ms ease;
           transition: all 100ms ease;
 }
@@ -7771,23 +8117,24 @@ body h2 {
 }
 
 .dock a i {
-  font-size: 4.5em;
+  font-size: 3.5em;
   -webkit-transition: all 200ms ease;
      -moz-transition: all 200ms ease;
+      -ms-transition: all 200ms ease;
        -o-transition: all 200ms ease;
           transition: all 200ms ease;
 }
 
 .dock a i.contact {
-  font-size: 4.5em;
+  font-size: 3.5em;
 }
 
 @media (max-width: 767px) {
   .dock a i {
-    font-size: 2em;
+    font-size: 1em;
   }
   .dock a i.contact {
-    font-size: 1.5em;
+    font-size: 0.5em;
   }
 }
 
