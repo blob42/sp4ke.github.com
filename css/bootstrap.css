@@ -7992,6 +7992,49 @@ body h2 {
   width: 100%;
 }
 
+.main .projects .details.simplifield .demo {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main .projects .details.simplifield .demo img {
+  position: relative;
+  z-index: 10;
+}
+
+.main .projects .details.simplifield .demo video {
+  position: absolute;
+  top: 0;
+  top: 7%;
+  left: 0;
+  z-index: 1;
+}
+
+.main .projects .details.uman .carousel {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main .projects .details.uman .carousel img:first-child {
+  position: relative;
+  z-index: 10;
+}
+
+.main .projects .details.uman .carousel img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  width: 92% !important;
+  -webkit-transform: translate(-50%, 0);
+     -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+       -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .main .projects .details.zapawa .demo {
   width: 80%;
   margin-right: auto;

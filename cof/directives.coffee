@@ -28,13 +28,15 @@ angular
       carousel: '='
     link: (scope, elm, attrs)->
       carousel = scope.carousel
-      img = elm.find('img')[0]
+      img = elm.find('img')[1]
       cIndex = 0
       img.src = carousel[cIndex]
 
       setInterval(->
+          $(img).toggleClass('fadeIn fadeOut')
+
           setTimeout(->
-              $(img).css({opacity: 0.1})
+              $(img).hide()
             ,
               100
           )
@@ -44,9 +46,10 @@ angular
           else
             cIndex = 0
 
-          img.src = carousel[cIndex]
           setTimeout(->
-              $(img).css({opacity: 1})
+              img.src = carousel[cIndex]
+              $(img).toggleClass('fadeOut fadeIn')
+              $(img).show()
             ,
               200
             )

@@ -2,6 +2,7 @@
     <div custom-scroll class="title offset1 span5 ng-cloak left-panel">
         <h4>projects</h4>
         <hr>
+        <h2><a hover-show="simplifield" target="_blank" href="http://www.simplifield.com/">Simplifield <small>(fr)</small></a></h2>
         <h2><a hover-show="uman" href="http://u-manfilms.tv/">Uman films </a><small>(fr)</small></h2>
         <h2><a class="nolink" hover-show="morrisby" href="">Morrisby <small>(uk)</small></a></h2>
         <h2><a class="nolink" hover-show="zapawa" href="">Zapawa <small>(uk)</small></a></h2>
@@ -27,6 +28,30 @@
 
     <!-- Project Details  -->
 
+    <div class="details simplifield span5 hide animated fadeIn">
+        <h4>Frontend UI/UX</h4>
+        <hr>
+        <div class="text-left">
+            <p>For this client my work involved developing UI and UX for the dashboard side of a web application</p>
+            <p>As the API was not ready yet I made API mocks to develop the frontend directives</p>
+            <h5>Key features:</h5>
+            <ul>
+                <li>Advanced customizable and stackable modal system based on Angular UI bootstrap modals</li>
+                <li>Angular directives for graphing data with d3.js</li>
+                <li>Responsive editable tables (modified fork of ng-grid)</li>
+                <li>Several UI elements inspired by Google Gmail UI</li>
+            </ul>
+
+            <h5>Technologies:</h5>
+            <small><span class="label">AngularJS</span>, <span class="label">Less</span>, <span class="label">D3</span>, <span class="label">Faker</span></small>
+        </div>
+        <hr>
+        <div class="demo">
+            <img src="/img/iMac.png" alt="">
+            <video preload="" loop="loop" autoplay="" src="//media.sp4ke.com/simplifield.mp4"></video>
+        </div>
+    </div>
+
     <div class="details uman span5 hide animated fadeIn">
         <h4>Design - Development</h4>
         <hr>
@@ -35,16 +60,16 @@
             <p>The client works in the video making industry. I made a minimalistic and 
             pure design to make the video content stands out.
              </p>
-
              <h5>UX</h5>
              <p>
                 Optimised the user experience for easy and touch enabled video content scrolling
              </p>
 
              <h5>Technologies</h5>
-             <small>Bootstrap, Angular, Less</small>
+             <small><span class="label">Bootstrap</span>, <span class="label">AngularJS</span>, <span class="label">Less</span></small>
              <hr>
-             <div class="span10 text-center" carousel="carousels.uman">
+             <div class="text-center carousel" carousel="carousels.uman">
+                <img src="/img/iMac.png" alt="">
                 <img class="animated fadeIn" alt="">
              </div>
         </div>
@@ -58,12 +83,20 @@
                 Developped the frontend side of a questionnaire and an assessment application. 
             </p>
             <p>
-                The apps were designed for browsers and tablets.
+                The apps were designed for browsers and tablets and was targeted to school environments.
             </p>
-            <p>
-                The apps were targeted to school environments. Developped an offline and cache aggressive algorithms to make the assessment user experience smooth even in bad connectivity situations. 
-            </p>
-            <p>Technologies: <em>Angular JS, Bootstrap, Less</em></p>
+            <h5>Key features:</h5>
+            <ul>
+                <li>Aggressive caching system (data and images)</li>
+                <li>Asynchronous requests to avoid server overloads</li>
+                <li>Offline and bad network aware user experience</li>
+                <li>Developped as a module easy to include in any page without using an iFrame</li>
+            </ul>
+            <h5>Technologies: </h5>
+            <small class="label">AngularJS</small>
+            <small class="label">Bootstrap</small>
+            <small class="label">FlatUI</small>
+            <small class="label">Less</small>
         </div>
 
         <hr>    
@@ -84,7 +117,12 @@
             <p>A backoffice for restaurants was also prototyped for tablets. </p>
 
             <br>
-            <p>Technologies: <em>Bootstrap, Angular JS, Less</em></p>
+            <h5>Technologies:</h5>
+
+            <small class="label">AngularJS</small>
+            <small class="label">Bootstrap</small>
+            <small class="label">Less</small>
+
             <hr>
             <div class="demo">
                 <img src="/img/iMac.png" alt="">

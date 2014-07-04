@@ -157,6 +157,49 @@ body {
                 width: 100%
             }
 
+            &.simplifield {
+                .demo {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    img {
+                        z-index: 10;
+                        position: relative;
+                    }
+
+                    video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        top: 7%;
+                    }
+                }
+            }
+
+            &.uman {
+                .carousel {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    img:first-child {
+                        z-index: 10;
+                        position: relative;
+                    }
+
+                    img:nth-child(2) {
+                        position: absolute;
+                        top: 0px;
+                        left: 50%;
+                        width: 92% !important;
+                        .translate(-50%, 0%);
+                        z-index: 1;
+                    }
+                }
+            }
+
             &.zapawa {
                 .demo {
                     width: 80%;

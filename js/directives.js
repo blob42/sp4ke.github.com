@@ -37,25 +37,23 @@
       link: function(scope, elm, attrs) {
         var cIndex, carousel, img;
         carousel = scope.carousel;
-        img = elm.find('img')[0];
+        img = elm.find('img')[1];
         cIndex = 0;
         img.src = carousel[cIndex];
         return setInterval(function() {
+          $(img).toggleClass('fadeIn fadeOut');
           setTimeout(function() {
-            return $(img).css({
-              opacity: 0.1
-            });
+            return $(img).hide();
           }, 100);
           if (cIndex < carousel.length - 1) {
             cIndex += 1;
           } else {
             cIndex = 0;
           }
-          img.src = carousel[cIndex];
           return setTimeout(function() {
-            return $(img).css({
-              opacity: 1
-            });
+            img.src = carousel[cIndex];
+            $(img).toggleClass('fadeOut fadeIn');
+            return $(img).show();
           }, 200);
         }, 4500);
       }
