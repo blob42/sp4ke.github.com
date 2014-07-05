@@ -8069,9 +8069,14 @@ body h2 {
 .main .projects .details.simplifield .demo video {
   position: absolute;
   top: 0;
-  top: 7%;
-  left: 0;
+  left: 50%;
   z-index: 1;
+  width: 93% !important;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .main .projects .details.uman .carousel {
