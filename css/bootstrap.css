@@ -7818,6 +7818,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 body {
+  overflow-x: hidden;
   font: 18px/27px 'junctionregularRegular', Arial, sans-serif;
   color: #a7a7a7;
 }
