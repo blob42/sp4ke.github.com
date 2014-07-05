@@ -7948,6 +7948,14 @@ body h2 {
           transition: all 50ms ease;
 }
 
+.main .projects a:hover {
+  text-decoration: none !important;
+}
+
+.main .projects .details.selected {
+  display: block !important;
+}
+
 .main .projects img,
 .main .projects video {
   width: 100% !important;
@@ -7955,8 +7963,62 @@ body h2 {
 }
 
 .main .projects .left-panel {
+  position: fixed;
   height: 37rem;
   overflow: hidden;
+}
+
+.main .projects .left-panel hr {
+  margin-top: 0;
+}
+
+.main .projects .left-panel h5 a {
+  -webkit-transition: 500ms letter-spacing ease-out;
+     -moz-transition: 500ms letter-spacing ease-out;
+      -ms-transition: 500ms letter-spacing ease-out;
+       -o-transition: 500ms letter-spacing ease-out;
+          transition: 500ms letter-spacing ease-out;
+}
+
+.main .projects .left-panel h5 a:hover {
+  letter-spacing: 2px;
+  text-decoration: none !important;
+  -webkit-transition: 100ms letter-spacing ease-in;
+     -moz-transition: 100ms letter-spacing ease-in;
+      -ms-transition: 100ms letter-spacing ease-in;
+       -o-transition: 100ms letter-spacing ease-in;
+          transition: 100ms letter-spacing ease-in;
+}
+
+.main .projects .left-panel h5 {
+  padding-right: 1em;
+}
+
+.main .projects .left-panel h5.selected {
+  background: #3dc4de;
+}
+
+.main .projects .left-panel h5.selected a {
+  letter-spacing: 2px;
+}
+
+.main .projects .left-panel h5.selected * {
+  font-weight: bold;
+  color: white;
+}
+
+.main .projects .left-panel h5:active {
+  background-color: #3dc4de;
+}
+
+.main .projects .left-panel h5:active * {
+  font-weight: bold;
+  color: white;
+}
+
+.main .projects .left-panel h4 {
+  margin-top: 1.5em;
+  color: #399caf;
 }
 
 .main .projects .details {
@@ -8076,11 +8138,7 @@ body h2 {
 }
 
 .main .projects a:hover {
-  color: #57ddf7;
-}
-
-.main .projects a:hover:not(.nolink) {
-  text-decoration: underline !important;
+  color: #3dc4de;
 }
 
 .main .projects .title {
@@ -8101,15 +8159,25 @@ body h2 {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0 -30px 40px #ffffff;
-     -moz-box-shadow: 0 -30px 40px #ffffff;
-          box-shadow: 0 -30px 40px #ffffff;
   -webkit-animation-delay: 1.5s;
      -moz-animation-delay: 1.5s;
       -ms-animation-delay: 1.5s;
        -o-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  -webkit-transition: all 200ms ease-in;
+     -moz-transition: all 200ms ease-in;
+      -ms-transition: all 200ms ease-in;
+       -o-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+}
+
+.dock.isProjects {
+  width: auto;
+  text-align: left;
+}
+
+.dock.isProjects a {
+  font-size: .5em;
 }
 
 .dock .hoverText {
@@ -8151,7 +8219,7 @@ body h2 {
 
 .dock a:hover .projects,
 .dock a.active .projects {
-  color: #57ddf7;
+  color: #3dc4de;
 }
 
 .dock a:hover .blog,

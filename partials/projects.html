@@ -1,23 +1,30 @@
 <div class="projects row-fluid animated fadeIn ng-cloak">
-    <div custom-scroll class="title offset1 span5 ng-cloak left-panel">
+    <div class="title span3 ng-cloak left-panel">
         <h4>projects</h4>
         <hr>
-        <h2><a hover-show="simplifield" target="_blank" href="http://www.simplifield.com/">Simplifield <small>(fr)</small></a></h2>
-        <h2><a hover-show="uman" href="http://u-manfilms.tv/">Uman films </a><small>(fr)</small></h2>
-        <h2><a class="nolink" hover-show="morrisby" href="">Morrisby <small>(uk)</small></a></h2>
-        <h2><a class="nolink" hover-show="zapawa" href="">Zapawa <small>(uk)</small></a></h2>
-        <h2><a hover-show="jibli" target="_blank" href="http://jib.li">Jib.li</a></h2>
-        <h2><a hover-show="github" target="_blank" href="http://github.com/sp4ke"><i class="icon-github icon-2x"></i></a></h2>
+        <h5 ng-class="{selected: selectedItem == 'simplifield'}"><a  href="" ng-click="select('simplifield')">Simplifield </a><small>(fr)</small></h5>
+        <h5 ng-class="{selected: selectedItem == 'uman'}"><a ng-click="select('uman')" href="">Uman films </a><small>(fr)</small></h5>
+
+        <h5 ng-class="{selected: selectedItem == 'morrisby'}"><a ng-click="select('morrisby')" href="">Morrisby </a><small>(uk)</small></h5>
+
+        <h5 ng-class="{selected: selectedItem == 'zapawa'}"><a ng-click="select('zapawa')" href="">Zapawa </a><small>(uk)</small></h5>
+
+        <h5 ng-class="{selected: selectedItem == 'jibli'}"><a href="" ng-click="select('jibli')">Jib.li</a></h5>
+
+        <h5><a hover-show="github" target="_blank" href="http://github.com/sp4ke"><i class="icon-github icon-2x"></i></a></h5>
         <h4>talks</h4>
         <hr>
-        <h2><a hover-show="devops" target="_blank" href="http://www.slideshare.net/spykspyel/python-dev-ops">Python & DevOps</a></h2>
-        <h2><a hover-show="promises" target="_blank" href="http://sp4ke.com/angular-promises/slides/template.html">Angular then Promises</a></h2>
+
+        <h5><a hover-show="devops" ng-click="select('devops')" target="_blank" href="http://www.slideshare.net/spykspyel/python-dev-ops">Python & DevOps</a></h5>
+
+        <h5><a hover-show="promises" target="_blank" href="http://sp4ke.com/angular-promises/slides/template.html">Angular then Promises</a></h5>
+
         <h4>hacks</h4>
         <hr>
-        <h3><a hover-show="tmp-browse" target="_blank" href="https://github.com/sp4ke/tmpbrowse">tmpbrowse</a></h4>
-        <h3><a hover-show="howto" target="_blank" href="https://github.com/sp4ke/howto">howto</a></h4>
-        <h3><a hover-show="catdog-hunter" target="_blank" href="https://chrome.google.com/webstore/detail/catdog-hunter/cffhajgcjcbifcefedhkeekflnjpmdlh">CatDog Hunter</a></h4>
-        <h3><a hover-show="magic-button" target="_blank" href="//projects/bootstra-magic-button">Bootstrap Magic Buttons</a></h4>
+        <h5 ng-class="{selected: selectedItem == 'tmp-browse'}"><a hover-show="tmp-browse" target="_blank" href="https://github.com/sp4ke/tmpbrowse">tmpbrowse</a></h4>
+        <h5 ng-class="{selected: selectedItem == 'howto'}"><a hover-show="howto" target="_blank" href="https://github.com/sp4ke/howto">howto</a></h5>
+        <h5 ng-class="{selected: selectedItem == 'catdog-hunter'}"><a hover-show="catdog-hunter" target="_blank" href="https://chrome.google.com/webstore/detail/catdog-hunter/cffhajgcjcbifcefedhkeekflnjpmdlh">CatDog Hunter</a></h5>
+        <h5 ng-class="{selected: selectedItem == 'magic-button'}"><a hover-show="magic-button" target="_blank" href="/projects/bootstrap-magic-button/example">Bootstrap Magic Buttons</a></h5>
         <br>
         <br>
         <br>
@@ -28,8 +35,11 @@
 
     <!-- Project Details  -->
 
-    <div class="details simplifield span5 hide animated fadeIn">
+    <div class="details simplifield offset4 span5 hide animated fadeIn" ng-class="{selected: selectedItem == 'simplifield'}">
         <h4>Frontend UI/UX</h4>
+        <div class="text-center">
+            <a target="_blank" href="http://www.simplifield.com/"><i class="icon-eye-open icon-2x"></i></a>
+        </div>
         <hr>
         <div class="text-left">
             <p>For this client my work involved developing UI and UX for the dashboard side of a web application</p>
@@ -52,8 +62,9 @@
         </div>
     </div>
 
-    <div class="details uman span5 hide animated fadeIn">
+    <div class="details uman offset4 span5 hide animated fadeIn" ng-class="{selected: selectedItem == 'uman'}">
         <h4>Design - Development</h4>
+            <a target="_blank" href="http://u-manfilms.tv/"><i class="icon-eye-open icon-2x"></i></a>
         <hr>
         <div class="text-left">
             <h5>Design</h5>
@@ -75,7 +86,7 @@
         </div>
     </div>
 
-    <div class="details morrisby span5 hide animated fadeIn">
+    <div class="details morrisby offset4 span5 hide animated fadeIn" ng-class="{selected: selectedItem == 'morrisby'}">
         <h4>Frontend App Development - Assessment/Questionnaire</h4>
         <hr>
         <div class="text-left">
@@ -107,7 +118,7 @@
         
     </div>
 
-    <div class="details zapawa span5 hide animated fadeIn">
+    <div class="details zapawa span5 offset4 hide animated fadeIn" ng-class="{selected: selectedItem == 'zapawa'}">
         <h4>Frontend UI/UX - Prototyping</h4>
         <hr>
         <div class="text-left">
@@ -133,7 +144,7 @@
     </div>
 
 
-    <div class="details jibli span5 hide animated fadeIn">
+    <div class="details jibli span5 offset4 hide animated fadeIn" ng-class="{selected: selectedItem == 'jibli'}">
         <h4>Fullstack development</h4>
         <hr>
         <div class="text-left">
@@ -156,35 +167,38 @@
                 ZeroMQ, Celery
             </em>
         </div>
+        <div class="text-center">
+            <a target="_blank" href="http://jib.li/"><i class="icon-eye-open icon-2x"></i></a>
+        </div>
     </div>
-    <div class="details github span5 hide animated fadeIn">
+    <div class="details github span5 offset4 hide animated fadeIn">
         My code on github
     </div>
-    <div class="details devops span5 hide animated fadeIn">
+    <div class="details devops span5 offset4 hide animated fadeIn">
         <h3>Python & Devops: Your own heroku .</h3>
         A presentation I made on a French Python meetup talking about uWSGI and agile deployment.
     </div>
-    <div class="details catdog-hunter span5 hide animated fadeIn">
+    <div class="details catdog-hunter span5 offset4 hide animated fadeIn">
         <br />
         <br />
         A quick afternoon project to get rid of cats and dogs on reddit
     </div>
-    <div class="details magic-button span5 hide animated fadeIn">
+    <div class="details magic-button span5 offset4 hide animated fadeIn">
         <br />
         <br />
         A plugin that make it possible for any button to float on it's parent div.
     </div>
-    <div class="details promises span5 hide animated fadeIn">
+    <div class="details promises span5 hide offset4 animated fadeIn">
         <br />
         <br />
         An introduction to the principles of Asynchronous programming with Promises in Angular
     </div>
-    <div class="details tmp-browse span5 hide animated fadeIn">
+    <div class="details tmp-browse span5 offset4 hide animated fadeIn">
         <br />
         <br />
         A tool for front end developers to help spawn temporary browser sessions (only chrome for the moment) in a sandboxed environment to securely test your web app without worrying about clearing cache, extensions ...
     </div>
-    <div class="details howto span5 hide animated fadeIn">
+    <div class="details howto span5 offset4 hide animated fadeIn">
         <br />
         <br />
         A stupidly simple cli interface to get tl;dr answers from Stack Overflow

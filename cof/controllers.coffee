@@ -7,6 +7,16 @@
             '/img/uman2.png'
         ]
 
+    $scope.selectedItem = 'simplifield'
+    $scope.select = (item)->
+        if $scope.selectedItem is item
+            $scope.selectedItem = undefined
+        else
+            $scope.selectedItem = item
+        
+        
+
+
 
 projectsCtrl.$inject = ['$scope']
 

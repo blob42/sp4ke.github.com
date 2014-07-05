@@ -25,7 +25,7 @@
   <div class="container-fluid main ng-cloak">
       <div ng-view></div>
   </div>
-  <div class="container-fluid dock animated fadeInUp ng-cloak" ng-controller="dockCtrl">
+  <div class="container-fluid dock animated fadeInUp ng-cloak" ng-class="{isProjects: selected == 1}" ng-controller="dockCtrl">
       <div ng-class="hovered && 'hovered'"class="hoverText">
           <h3>{{icons[hoveredIndex].text}}</h3>
       </div>

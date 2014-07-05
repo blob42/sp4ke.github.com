@@ -116,6 +116,14 @@ body {
 
     .projects {
 
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        .details.selected {
+            display: block !important;
+        }
+
         img, video {
             width: 100% !important;
             height: auto !important;
@@ -124,6 +132,52 @@ body {
         .left-panel {
             height: 37rem;
             overflow: hidden;
+            position: fixed;
+
+            hr {
+                margin-top: 0px;
+            }
+
+            h5 a {
+                .transition(500ms letter-spacing ease-out);
+
+                &:hover {
+                    .transition(100ms letter-spacing ease-in);
+                    letter-spacing: 2px;
+                    text-decoration: none !important;
+                }
+
+                
+            }
+
+            h5 {
+                padding-right: 1em;
+            }
+
+            h5.selected {
+                background: @projectsColor;
+                a {
+                    letter-spacing: 2px
+                }
+
+                * {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            h5:active {
+                background-color: @projectsColor;
+                * {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            h4 {
+                color: desaturate(darken(@projectsColor, 10%), 20%);
+                margin-top: 1.5em;
+            }
         }
 
 
@@ -243,9 +297,6 @@ body {
                 color: @projectsColor;
             }
 
-            &:hover:not(.nolink) {
-                text-decoration: underline !important
-            }
         }
         .title {
             text-align: right;
@@ -264,9 +315,18 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0;
+    .transition(all 200ms ease-in);
     text-align: center;
-    background: #fff;
-    .box-shadow(0 -30px 40px #fff);
+
+    &.isProjects {
+        width: auto;
+        text-align: left;
+
+        a {
+            font-size: .5em;
+        }
+    }
+
 
     .hoverText {
         top: -5%;
