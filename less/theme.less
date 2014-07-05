@@ -83,6 +83,10 @@ body {
 
     .freelance {
 
+        a, h2 {
+            color: darken(@profilColor, 20%);
+        }
+
         @media (max-width: 767px) {
             padding-bottom: 16%;
         }
@@ -105,10 +109,20 @@ body {
             padding-left: .5em;
             padding-right: .5em;
 
+            &.contact-qrcode {
+                width: 100%;
+                display: inline-block;
+                position: relative;
+
+                img {
+                    width: 15%;
+                }
+            }
+
             &:hover {
                 color: @contactColor;
                 .transition(all 50ms ease);
-                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 
             }
         }

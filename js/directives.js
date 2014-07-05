@@ -23,9 +23,17 @@
     };
   }).directive('customScroll', function() {
     return {
-      link: function(scope, elm, attrs) {
+      link: function(scoe, elm, attrs) {
         return $(elm).mCustomScrollbar({
           theme: 'dark-2'
+        });
+      }
+    };
+  }).directive('copyToClipboard', function() {
+    return {
+      link: function(scope, elm, attrs) {
+        return elm.bind('click', function() {
+          return window.prompt('You can safely copy&past my bitcoin address :-)', elm.text());
         });
       }
     };

@@ -18,9 +18,16 @@ angular
   )
 
   .directive('customScroll', ()->
-    link: (scope, elm, attrs)->
+    link: (scoe, elm, attrs)->
       $(elm).mCustomScrollbar 
         theme: 'dark-2'
+  )
+
+  .directive('copyToClipboard', ()->
+    link: (scope, elm, attrs) ->
+      elm.bind('click', ->
+        window.prompt('You can safely copy&past my bitcoin address :-)', elm.text())
+      )
   )
 
   .directive('carousel', ()->

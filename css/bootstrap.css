@@ -7912,6 +7912,11 @@ body h2 {
   padding-bottom: 2%;
 }
 
+.main .freelance a,
+.main .freelance h2 {
+  color: #06df43;
+}
+
 @media (max-width: 767px) {
   .main .freelance {
     padding-bottom: 16%;
@@ -7938,9 +7943,19 @@ body h2 {
           transition: all 200ms ease;
 }
 
+.main .contact a.contact-qrcode {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.main .contact a.contact-qrcode img {
+  width: 15%;
+}
+
 .main .contact a:hover {
-  color: #f9ff6b;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+  color: #f8ca00;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   -webkit-transition: all 50ms ease;
      -moz-transition: all 50ms ease;
       -ms-transition: all 50ms ease;
@@ -8215,7 +8230,7 @@ body h2 {
 
 .dock a:hover .contact,
 .dock a.active .contact {
-  color: #f9ff6b;
+  color: #f8ca00;
 }
 
 .dock a:hover .profil,
