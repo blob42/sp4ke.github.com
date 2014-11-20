@@ -44,16 +44,15 @@ projectsCtrl.$inject = ['$scope']
         ,
     ]
 
-    $scope.hovered = false
+    # $scope.hovered = false
 
-    $scope.hoverText = ($index)->
-        $scope.hovered = true
-        $scope.hoveredIndex = $index
-        console.log $scope.hovered
+    # $scope.hoverText = ($index)->
+    #     $scope.hovered = true
+    #     $scope.hoveredIndex = $index
 
-    $scope.hoverOut = ()->
-        $scope.hovered = false
-        $scope.hoveredIndex = null
+    # $scope.hoverOut = ()->
+    #     $scope.hovered = false
+    #     $scope.hoveredIndex = null
 
     $scope.selected = null
 

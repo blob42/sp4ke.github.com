@@ -20,6 +20,7 @@ body {
     }
 
 
+
 }
 
 .btc-address {
@@ -150,7 +151,7 @@ body {
 
         .left-panel {
             top: 0px;
-            height: 37rem;
+            height: auto;
             overflow: hidden;
             position: fixed;
 
@@ -333,21 +334,20 @@ body {
 }
 
 .dock {
-    .animation-delay(1.5s);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    .transition(all 200ms ease-in);
-    text-align: center;
+    .animation-delay(1s);
+    // .transition(all 200ms ease-in);
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 60px;
 
-    &.isProjects {
-        width: auto;
-        text-align: left;
+    // &.isProjects {
+    //     text-align: left;
 
-        a {
-            font-size: .5em;
-        }
-    }
+    //     a {
+    //         font-size: .5em;
+    //     }
+    // }
 
 
     .hoverText {
@@ -362,11 +362,13 @@ body {
     
     a {
         color: @dockIconColor;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.18);
-        padding-left: 1.5em;
-        padding-right: 1.5em;
         .transition(all 100ms ease);
-        display: inline-block;
+        float: left;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: .5em;
+
 
         &:hover, &.active {
             text-decoration: none;
