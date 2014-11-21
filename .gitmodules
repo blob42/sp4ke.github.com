@@ -7,9 +7,6 @@
 [submodule "lib/animate.css"]
 	path = lib/animate.css
 	url = https://github.com/daneden/animate.css.git
-[submodule "lib/fontawesome"]
-	path = lib/fontawesome
-	url = https://github.com/FortAwesome/Font-Awesome.git
 [submodule "lib/lesshat"]
 	path = lib/lesshat
 	url = https://github.com/csshat/lesshat.git
