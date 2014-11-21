@@ -26,7 +26,7 @@
       <div ng-view></div>
   </div>
   <div class="dock animated fadeInRight" ng-class="{isProjects: selected == 1}" ng-controller="dockCtrl">
-      <a ui-event="{ mouseover: 'hoverText($index)', mouseout: 'hoverOut()' }" ng-click="switch($index)" ng-class="selected == $index && 'active'" ng-repeat="icon in icons" href="javascript:void(0);"><i ng-class="[icon.class, icon.icon]"></i></a>
+      <a ui-event="{ mouseover: 'hoverText($index)', mouseout: 'hoverOut()' }" ng-click="switch($index)" ng-class="selected == $index && 'active'" ng-repeat="icon in icons" href="javascript:void(0);"><i class="fa" ng-class="[icon.class, icon.icon]"></i></a>
   </div>
 
 
