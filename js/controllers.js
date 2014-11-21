@@ -21,22 +21,22 @@
     $scope.icons = [
       {
         "class": 'profil',
-        icon: 'icon-user',
+        icon: 'fa-user',
         link: '/freelance',
         text: 'What I Do'
       }, {
         "class": 'projects',
-        icon: 'icon-laptop',
+        icon: 'fa-laptop',
         link: '/projects',
         text: 'My work'
       }, {
         "class": 'contact',
-        icon: 'icon-phone',
+        icon: 'fa-phone',
         link: '/contact',
         text: 'Get in touch'
       }, {
         "class": 'blog',
-        icon: 'icon-book',
+        icon: 'fa-book',
         link: '/blog',
         text: 'Ideas'
       }
