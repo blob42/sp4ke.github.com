@@ -4,7 +4,7 @@
   <title><![CDATA[]]></title>
   <link href="http://sp4ke.github.com/blog/atom.xml" rel="self"/>
   <link href="http://sp4ke.github.com/blog/"/>
-  <updated>2013-12-19T13:54:11+01:00</updated>
+  <updated>2014-01-29T16:29:16+01:00</updated>
   <id>http://sp4ke.github.com/blog/</id>
   <author>
     <name><![CDATA[Chakib Benziane]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AdBlock can block Angular from loading views]]></title>
+    <link href="http://sp4ke.github.com/blog/adblock-can-block-angular-loading-views/"/>
+    <updated>2014-01-29T16:12:00+01:00</updated>
+    <id>http://sp4ke.github.com/blog/adblock-can-block-angular-loading-views</id>
+    <content type="html"><![CDATA[<p>Every developer knows the feeling of hitting a weird bug, but I must admitt I was not prepared for this one.</p>
+
+<p>It appears that if you have the Adblock extension installed, and have some Angular view names belonging to Adblock filter
+list, then AdBlock can</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My most valuable lesson in life learnt the hard way]]></title>
